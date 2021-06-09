@@ -14,7 +14,7 @@ from dash.dependencies import Input, Output
 
 
 # Load data 
-df = pd.read_csv("../input/Bollywood_movies.csv")
+df = pd.read_csv("../input/bollywood_full.csv")
 
 # get informaction about data
 df.info()
