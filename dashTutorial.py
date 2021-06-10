@@ -46,3 +46,35 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 
 
+# Build App
+
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+app.layout = html.Div([
+    html.Div([
+
+        html.Div([
+             dcc.Graph(id='indicator-graphic'),
+
+    dcc.Slider(
+        id='year--slider',
+        min=df['Year'].min(),
+        max=df['Year'].max(),
+        value=df['Year'].max(),
+        marks={str(year): str(year) for year in df['Year'].unique()}
+    )
+])
+        
+        # Callbacks
+@app.callback(
+     dash.dependencies.Input('year--slider', 'value')])
+        dff = df[df['Year'] == year_value]
+        
+        
+        ######### I have Errors ! ##### :
+        # Want Ask About it ...
+       
+        ## Dash is running on http://127.0.0.1:8050/
+        #Dash is running on http://127.0.0.1:8050/
+        # * Serving Flask app "__main__" (lazy loading)
