@@ -1,9 +1,3 @@
-#### Team Members: ###
-#-Zarah Shibli
-#-Lama Alzahrani
-#-Wajd Alturki
-
-# Final Project :
 
 # import libraries 
 
@@ -348,3 +342,12 @@ def build_graph(brands):
 # Run the App Server
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
+    
+    
+    
+###### Team Members: ######
+#-Zarah Shibli
+#-Lama Alzahrani
+#-Wajd Alturki
+
